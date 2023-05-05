@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  background: #000000;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7% 11% 5%;
+}
+
+.search {
+  display: inline-flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+header input {
+  flex-grow: 1;
+  max-width: 70%;
+  background: #06181C;
+  color: #FFFFFF;
+  width: 100%;
+  width: 46.2rem;
+  height: 4.8rem;
+  padding: 1.6rem;
+  margin-left: 2%;
+  border: none;
+  border-radius: .5rem;
+  outline: none;
+  font-size: 1.6rem;
+  line-height: 100%;
+}
+
+header button {
+  background: #065E7C;
+  color: #FFFFFF;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  width: 35%;
+  height: 4.8rem;
+  border-radius: .5rem;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+header button:hover {
+  background: #044a61;
+}
+
+table * {
+  width: 100%;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0 11% 5%;
+  color: #E1E1E6;
+  outline: 1px solid #4A808C;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+table tr:nth-child(odd) {
+  background: rgba(6, 22, 27, 0.5);
+}
+
+table tr:nth-child(even) {
+  background: #06181C;
+}
+
+table th {
+  background: #092D38;
+  font-size: 2rem;
+  line-height: 160%;
+  text-align: left;
+  padding: 1.6rem 9.2rem 1.6rem 4rem;
+}
+
+table td {
+  padding: 2.4rem 5.3rem 2.4rem 4rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0;
+}
+
+td.user a {
+  text-decoration: none;
+  color: #E1E1E6;
+}
+
+td.user a p {
+  font-weight: 700;
+  margin-bottom: .8rem;
+}
+
+td .remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: #F75A68;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 160%;
+}
